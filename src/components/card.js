@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
-import './index.css'
-import symbol1 from './symbol.png'
-import symbol2 from './symbol2.png'
-import symbol3 from './symbol3.png'
-import picture1 from './picture1.png'
-import picture2 from './picture2.png'
-import picture3 from './picture3.png'
+import '../index.css'
+import symbol1 from '../static/symbol.png'
+import symbol2 from '../static/symbol2.png'
+import symbol3 from '../static/symbol3.png'
+import picture1 from '../static/picture1.png'
+import picture2 from '../static/picture2.png'
+import picture3 from '../static/picture3.png'
 
 class Card extends Component {
   constructor(props) {
@@ -37,13 +37,9 @@ class Card extends Component {
     }
   }
 
-  postInformation = () => {
-    console.log(this.state.picture);
-  }
-
   render() {
     return(
-      <div className="card" onClick={this.postInformation}>
+      <div className="card">
         <img className="cardSymbol" src={this.state.type}/>
         <img className="cardImg" src={this.state.picture}/>
         <div className="cardText">{this.state.text}</div>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import './index.css'
-import logo from './logo.png';
+import '../index.css'
+import logo from '../static/logo.png';
 import Button from './Button'
 
 class NavBar extends Component {

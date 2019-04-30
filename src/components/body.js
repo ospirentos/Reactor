@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Card from './card'
-import './index.css'
+import '../index.css'
 
 class Body extends Component {
   render() {

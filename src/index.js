@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import NavBar from './navbar'
-import Body from'./body'
+import NavBar from './components/navbar'
+import Body from'./components/body'
 import "./index.css"
 
 
