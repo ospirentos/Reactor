@@ -6,7 +6,7 @@ import "./index.css"
 class Character extends React.Component {
   render() {
     return (
-        <div><NavBar /><Body /></div>
+        <Body />
     );
   }
 }
