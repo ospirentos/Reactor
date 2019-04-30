@@ -1,0 +1,78 @@
+.navbar {
+  position: fixed;
+  background: #000033;
+  height: 60px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo {
+  position: relative;
+  float: left;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 10%;
+}
+
+.buttons {
+  position: relative;
+  float: left;
+  text-align: center;
+  background: #000033;
+  height: 60px;
+  width: 500px;
+}
+
+.button {
+  display: inline-block;
+  background: #000033;
+  height:40px;
+  width: 80px;
+  text-align: center;
+  padding-top: 20px;
+  margin-right: 5px;
+}
+
+.buttonLine {
+  position: relative;
+  height: 3px;
+  width:40px;
+  margin-top: 19px;
+  margin-left: 20px;
+}
+
+.body {
+  height: 100%;
+  width: 75%;
+  background: black;
+  padding-top: 65px;
+  padding-left:13%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  padding-top: 5px;
+  margin: 3px;
+  background: blue;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.cardSymbol {
+  width: 15px;
+  height: 15px;
+}
+
+.cardText {
+  margin-top: 30px;
+  font-weight:bold;
+}
