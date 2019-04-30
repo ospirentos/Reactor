@@ -40,8 +40,8 @@ class Card extends Component {
   render() {
     return(
       <div className="card">
-        <img className="cardSymbol" src={this.state.type}/>
-        <img className="cardImg" src={this.state.picture}/>
+        <img className="cardSymbol" src={this.state.type} alt="sym"/>
+        <img className="cardImg" src={this.state.picture} alt="cardImg"/>
         <div className="cardText">{this.state.text}</div>
       </div>
     );

@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react'
 import '../index.css'
 
@@ -9,6 +8,7 @@ class Button extends Component {
       text: props.text,
       color: '#ffffff',
       cursor: 'default',
+      link: props.link
     }
   }
 
@@ -22,7 +22,6 @@ class Button extends Component {
   }
 
   handleMClick = (e) => {
-    console.log(e);
     this.setState({color: '#00ff99'})
   }
 
