@@ -1,17 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter, Route, Link} from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import "./index.css"
 import NavBar from './components/navbar'
-import Body from './components/body'
+import Characters from './components/characters'
+import Places from './components/places'
+import Spells from './components/spells'
+import About from './components/about'
 
-class Route extends React.Component {
+class PageRouter extends React.Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <Route path="/" component={NavBar} />
-        <Route path="/characters" component={Body} />
-      </Router>
+        <Route path="/characters" component={Characters} />
+        <Route path="/places" component={Places} />
+        <Route path="/spells" component={Spells} />
+        <Route path="/about" component={About} />
+      </BrowserRouter>
     )
   }
 }

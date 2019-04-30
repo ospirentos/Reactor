@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import '../index.css'
 import logo from '../static/logo.png';
 import Button from './button'
-import Characters from '../characters'
 
 class NavBar extends Component {
   render() {
@@ -13,9 +12,9 @@ class NavBar extends Component {
         </a>
         <div className="buttons">
           <a href="/characters"><Button text="Characters"/></a>
-          <Button text="Places"/>
-          <Button text="Spells"/>
-          <Button text="About"/>
+          <a href="/places"><Button text="Places"/></a>
+          <a href="/spells"><Button text="Spells"/></a>
+          <a href="/about"><Button text="About"/></a>
         </div>
       </div>
     );

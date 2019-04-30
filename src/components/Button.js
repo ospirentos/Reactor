@@ -8,8 +8,9 @@ class Button extends Component {
       text: props.text,
       color: '#ffffff',
       cursor: 'default',
-      link: props.link
+      link: window.location.pathname
     }
+
   }
 
   handleMEnter = () => {
@@ -17,7 +18,7 @@ class Button extends Component {
   }
 
   handleMLeave = () => {
-    console.log(window.location.href)
+      console.log;
     this.setState({cursor: 'default'})
   }
 

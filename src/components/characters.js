@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Card from './card'
 import '../index.css'
 
-class Body extends Component {
+class Characters extends Component {
   render() {
     return(
       <div className="body">
@@ -19,4 +19,4 @@ class Body extends Component {
   }
 }
 
-export default Body;
+export default Characters;
