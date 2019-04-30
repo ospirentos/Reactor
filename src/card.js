@@ -37,16 +37,13 @@ class Card extends Component {
     }
   }
 
-  handleClick = () => {
-    fetch('http://192.168.1.100:80/getdata/json')
-      .then(response => response.json())
-      .then(data => this.setState({data}));
-    console.log(this.state.data);
+  postInformation = () => {
+    console.log(this.state.picture);
   }
 
   render() {
     return(
-      <div className="card" onClick={this.handleClick}>
+      <div className="card" onClick={this.postInformation}>
         <img className="cardSymbol" src={this.state.type}/>
         <img className="cardImg" src={this.state.picture}/>
         <div className="cardText">{this.state.text}</div>
