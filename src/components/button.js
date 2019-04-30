@@ -18,7 +18,6 @@ class Button extends Component {
   }
 
   handleMLeave = () => {
-      console.log;
     this.setState({cursor: 'default'})
   }
 
