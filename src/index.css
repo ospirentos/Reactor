@@ -50,7 +50,7 @@ body {
 .body {
   height: 100%;
   width: 75%;
-  background: black;
+  background: #333333;
   padding-top: 65px;
   padding-left:13%;
   padding-right: 15%;
@@ -58,21 +58,45 @@ body {
 }
 
 .card {
-  width: 150px;
-  height: 200px;
-  padding-top: 5px;
+  width: 250px;
+  height: 400px;
+  padding: 0px;
   margin: 3px;
-  background: blue;
   display: inline-block;
-  border-radius: 10px;
+  position: relative;
 }
 
-.cardSymbol {
-  width: 15px;
-  height: 15px;
+.cardStructure {
+  width: 250px;
+  height: 400px;
+  padding: 0px;
+  margin: 0px;
+  z-index: 2;
+  position: absolute;
 }
 
-.cardText {
-  margin-top: 30px;
+.cardImage {
+  position:absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 1;
+}
+
+.cardName {
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  height:20px;
+  width: 150px;
+  z-index: 3;
   font-weight:bold;
+}
+
+.cardDescription {
+  position: absolute;
+  top: 270px;
+  left: 50px;
+  height:100px;
+  width: 150px;
+  z-index: 3;
 }

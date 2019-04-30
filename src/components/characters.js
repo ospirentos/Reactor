@@ -14,6 +14,10 @@ class Characters extends Component {
         <Card type="3"/>
         <Card type="2"/>
         <Card type="2"/>
+        <Card type="2"/>
+        <Card type="2"/>
+        <Card type="2"/>
+        <Card type="2"/>
       </div>
     );
   }
