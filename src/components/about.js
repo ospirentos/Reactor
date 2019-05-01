@@ -4,7 +4,7 @@ import '../index'
 class About extends React.Component {
   render() {
     return(
-      <div>This is about page</div>
+      <div>This is about page change try</div>
     );
   }
 }
