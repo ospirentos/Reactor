@@ -5,6 +5,7 @@
   width: 100%;
   padding: 0px;
   margin: 0px;
+  z-index: 4;
 }
 
 body {
