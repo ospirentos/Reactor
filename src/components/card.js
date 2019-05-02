@@ -14,7 +14,9 @@ class Card extends Component {
   render() {
     return(
       <div className="card">
-        <div className="cardStructure" style={{backgroundImage: `url(${background})`}}></div>
+        <div className="cardStructure" 
+          style={{backgroundImage: `url(${background})`}}>
+        </div>
         <img className="cardImage" src={arcaneArcher} />
         <div className="cardName">Arcane Archer</div>
         <div className="cardDescription">{this.state.data.text}</div>

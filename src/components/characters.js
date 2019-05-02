@@ -35,7 +35,7 @@ class Characters extends Component {
   }
   
   render() {
-    return
+    return (
       <div className="body">
         {this.state.data.map((item, index) => (
           <Card data={item} key={index} />
