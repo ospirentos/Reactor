@@ -5,21 +5,41 @@ import '../index.css'
 class Characters extends Component {
   constructor(props) {
     super(props);
-    let cardList = []; 
-    let card = { "title":"arcaneArcher", "img":"", "text":"hello" };
-    cardList.push(card);
-    let cardsToRender = [];
-
-    for (const i of cardList) {
-      cardsToRender.push(<Card type={i.title} img = {i.img} text = {i.text} />)
+    let card = [
+      { 
+      "title":"arcaneArcher", 
+      "img":"", 
+      "text":"One of the most famous archers in Tolosis"},
+      { 
+        "title":"arcaneArcher", 
+        "img":"", 
+        "text":"One of the most famous archers in Tolosis"},
+      { 
+      "title":"arcaneArcher", 
+      "img":"", 
+      "text":"One of the most famous archers in Tolosis"},
+      { 
+        "title":"arcaneArcher", 
+        "img":"", 
+        "text":"One of the most famous archers in Tolosis"},
+      { 
+      "title":"arcaneArcher", 
+      "img":"", 
+      "text":"One of the most famous archers in Tolosis"}
+    ];
+    this.state = {
+      data: card
     }
 
+    console.log(card.text);
   }
   
   render() {
-    return(
+    return
       <div className="body">
-        {this.cardsToRender}
+        {this.state.data.map((item, index) => (
+          <Card data={item} key={index} />
+        ))}
       </div>
     );
   }

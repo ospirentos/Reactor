@@ -7,7 +7,7 @@ class Card extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: ''
+      data: props.data
     }
   }
 
@@ -17,7 +17,7 @@ class Card extends Component {
         <div className="cardStructure" style={{backgroundImage: `url(${background})`}}></div>
         <img className="cardImage" src={arcaneArcher} />
         <div className="cardName">Arcane Archer</div>
-        <div className="cardDescription">One of the most famous archers in Tolosis</div>
+        <div className="cardDescription">{this.state.data.text}</div>
       </div>
     );
   }
