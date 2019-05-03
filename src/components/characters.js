@@ -7,25 +7,25 @@ class Characters extends Component {
     super(props);
     let card = [
       { 
-      "title":"arcaneArcher", 
-      "img":"", 
-      "text":"One of the most famous archers in Tolosis"},
+        "title":"Arcane Archer", 
+        "img":"cardImage1.png", 
+        "text":"An archer mixed dexterity with some magic."},
       { 
-        "title":"arcaneArcher", 
-        "img":"", 
-        "text":"One of the most famous archers in Tolosis"},
+        "title":"John Ice", 
+        "img":"cardImage2.png", 
+        "text":"Brave warrior of the North"},
       { 
-      "title":"arcaneArcher", 
-      "img":"", 
-      "text":"One of the most famous archers in Tolosis"},
+      "title":"Freya", 
+      "img":"cardImage3.png", 
+      "text":"Good swordmaster with long hair."},
       { 
-        "title":"arcaneArcher", 
-        "img":"", 
-        "text":"One of the most famous archers in Tolosis"},
+        "title":"Defender", 
+        "img":"cardImage4.png", 
+        "text":"Strongest defender of Ozligiyat"},
       { 
-      "title":"arcaneArcher", 
-      "img":"", 
-      "text":"One of the most famous archers in Tolosis"}
+        "title":"Azina", 
+        "img":"cardImage5.png", 
+        "text":"Strong magician of the North"}
     ];
     this.state = {
       data: card
