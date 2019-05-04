@@ -81,29 +81,31 @@ body {
 }
 
 .card {
-  width: 250px;
-  height: 400px;
+  width: 234px;
+  height: 383px;
   padding: 0px;
-  margin: 3px;
+  margin: 7px;
   display: inline-block;
   position: relative;
 }
 
 .cardStructure {
-  width: 250px;
-  height: 400px;
+  width: 234px;
+  height: 383px;
   padding: 0px;
   margin: 0px;
   z-index: 2;
   position: absolute;
+  border: solid 5px;
+  transition: border 0.5s;
 }
 
 .cardImage {
   position:absolute;
   top: 40px;
-  left: 0px;
+  left: 5px;
   height: 220px;
-  width: 250px;
+  width: 234px;
   z-index: 1;
 }
 
