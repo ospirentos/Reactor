@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import '../index.css'
 import background from '../static/cardBackground1.png'
+import CardButton from './cardbutton'
 
 class Card extends Component {
   constructor(props) {
@@ -9,7 +10,8 @@ class Card extends Component {
       data: props.data,
       img: require('../static/' + props.data.img),
       borderColor: 'black',
-      isSelected: false     
+      isSelected: false,
+      cardButtons: 'hidden'
     }
   }
 
@@ -33,7 +35,8 @@ class Card extends Component {
   handleMouseClick = () => {
       this.setState((state) => ({
         borderColor: state.isSelected ? 'black' : 'red',
-        isSelected: !state.isSelected
+        isSelected: !state.isSelected,
+        cardButtons: state.isSelected ? 'hidden' : 'visible'
       }));
     }
 
@@ -51,6 +54,12 @@ class Card extends Component {
         <div className="cardImage" style={{backgroundImage: `url(${this.state.img})`}}></div>
         <div className="cardName">{this.state.data.title}</div>
         <div className="cardDescription">{this.state.data.text}</div>
+        <div className="cardButtonContainer">
+          <CardButton visibility={this.state.cardButtons} type='1'/> 
+          <CardButton visibility={this.state.cardButtons} type='2'/>
+          <CardButton visibility={this.state.cardButtons} type='3'/>
+          <CardButton visibility={this.state.cardButtons} type='4'/>
+        </div>
       </div>
     );
   }

@@ -135,3 +135,23 @@ body {
   background: blue;
   z-index:5;
 }
+
+.cardButton {
+  position: relative;
+  border-radius: 50%;
+  margin-bottom: 3px;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+  border: 3px solid red;
+  z-index: 5;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.cardButtonContainer {
+  position: relative;
+  top:80px;
+  left:5px;
+  visibility: visible;
+}
